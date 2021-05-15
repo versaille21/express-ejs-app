@@ -1,0 +1,146 @@
+MEMO NODEJS
+
+
+__________________CLASS 6______________________
+
+express-generator is a framework MVC 
+
+To install : sudo npm install - g express-generator
+
+to start project with template engine : ejs or hogan
+
+-> express projectName --ejs 
+
+it provide project structure like :
+
+ProjectName
+ |-package.json
+ |-app.js or index.js or server.js
+ |-->routes
+ |----user.js
+ |----employee.js
+ |----product.js
+ |-->model(DAO)
+ |----user
+ |----employee
+ |----product
+ |-->views
+ |----userView.ejs
+ |----error.ejs
+ |-->public
+ |
+
+
+
+ MongoDB -> NoSQL
+            Not Only Structured Query Language
+
+
+    NoSQL VS  RDBMS
+
+    RDBMS => SQL / PLSQL
+
+    RDBMS ---> SELECT * FROM emp WHERE empID = 123
+
+    NoSQL ---> db.emp.findOne({empID: 123});
+
+
+
+ORACLE 
+------------
+
+ID      NAME        MARKS
+2       ASSOUA      89
+
+
+MongoDB : unstructured Database
+   
+   i.e : 
+
+    [
+        {
+            "ID": 1,
+            "NAME" : "ASSOUA",
+            "MARKS" : 89
+        }, 
+
+        {
+            "ID": 2,
+            "NAME" : "manizan",
+            
+        }, 
+
+    ]
+
+i.e : 2
+
+    [
+        "book": {
+
+            "title" : "",
+            "author": "",
+            "date" :  "",
+            "feedback" : [
+                {"userId" : 123, "comments": "blah blah "},
+                {"userId" : 1, "comments": "I like this very much "}
+            ]
+        },
+
+        "book" : {
+            "title" : "",
+            "author" : "",
+            "date" : ""
+        } 
+    ]
+
+
+
+    RDBMS       VS      MongoDB
+    -----               --------
+    Table               Collection
+    Row                 Document
+    Tuple               Field
+    Rows and Columns    JSON 
+    Schema is must      No Schema
+
+
+
+    NodeJs can talk to MongoDb and MongoDB can talk to NodeJs
+
+    Client         Server          DB
+    UI    <------> NodeJs <------> MongoDB
+
+    
+    Download MongoDB Community Server
+
+    After installed MongoDB
+
+    MongoDB Compas (GUI)
+
+
+    inside file installation we can find files:
+
+    mongod : to launch instance of the server (double clic to execute)
+    mongo  : to connect client to the instance (double clic to launch) or use mongo compass (it's a GUI client)
+
+
+    DataBase: 
+
+    To see all databases i,nstalled : show dbs
+    To create ou to connect to one db : use nameOfDataBase
+    To see Collection (table) : show collections
+
+    To see data in collection : db.users.find().pretty() 
+
+
+Connect  NodeJs to/from MongoDB
+
+-> If you want to access only records for query MongoDBClient
+
+-> ORM (Object Relationship Mapping ) mongoose
+Java + hibernate
+
+
+
+
+
