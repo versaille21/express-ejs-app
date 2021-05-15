@@ -2,7 +2,8 @@
 const mongoose = require('mongoose');
 const chalk = require('chalk');
 
-const dbURL = "mongodb://localhost:27017/NewTest";
+//const dbURL = "mongodb://localhost:27017/NewTest";
+const dbURL = "mongodb+srv://amab:tintin21@cluster0.6s05v.mongodb.net/NewTest";
 
 mongoose.connect(dbURL, {useNewUrlParser: true} ); // Coonected to MongoDB
 
